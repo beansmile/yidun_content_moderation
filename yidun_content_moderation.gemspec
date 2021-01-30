@@ -9,15 +9,15 @@ Gem::Specification.new do |spec|
   spec.version     = YidunContentModeration::VERSION
   spec.authors     = ["MC"]
   spec.email       = ["mc@beansmile.com"]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of YidunContentModeration."
-  spec.description = "TODO: Description of YidunContentModeration."
+  spec.homepage    = "https://github.com/beansmile/yidun_content_moderation"
+  spec.summary     = ""
+  spec.description = ""
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata["allowed_push_host"] = "https://github.com/beansmile/yidun_content_moderation"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -25,7 +25,8 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  spec.add_dependency "rails", "~> 6.0.3", ">= 6.0.3.4"
+  spec.add_dependency "rails", "~> 5.2.4", ">= 5.2.4.4"
+  spec.add_dependency "httparty", "~> 0.18.0"
 
   spec.add_development_dependency "sqlite3"
 end
